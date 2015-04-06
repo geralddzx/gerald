@@ -1,0 +1,75 @@
+<table>
+<tr>
+	<td>
+		<div style="width:300px; height:300px; padding:20px">
+		    <a href="#" class="thumbnail">
+		      <%= image_tag("root/profile_photo.jpg") %>
+		    </a>
+		</div>
+	</td>
+	
+	<td>
+		<a href="http://ca.linkedin.com/pub/gerald-ding/73/3b/a70/en">
+			<%= image_tag("root/linkedin.gif", size: "50x50") %>
+		</a>
+
+		<a href="https://github.com/geralddzx">
+			<%= image_tag("root/github.png", size: "50x50") %>
+		</a>
+	</td>
+</tr>
+
+</table>
+
+<div style="padding:20px">
+	<a target="_blank" href="https://www.dropbox.com/s/batot8gwyxvma1x/Gerald%20Ding%202015%20Resume.pdf?raw=1">My Resume</a><br>
+</div> 
+
+<div style="width:750px; height:200px; padding:20px">
+	Hello. My name is Gerald Ding. I specialize in building full stack web applications with Ruby on Rails. I am also experienced in building real-time applications with node. I worked with SQL and Mongo databases.
+
+	I started programming when my friend told me about project Euler. After finishing the first 50 problems, I started learning ruby. After building my first app. I joined App Academy and learned good coding practices and pair programming. I built a full stack rails and backbone application for Stanford International College. After that, I worked part time for Sightline Innovations. I am finishing university this year and I am looking for full time junior developer positions.
+</div> 
+
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+<center><h2>Projects</h2></center>
+<table class="space-table">
+<tr>
+	<td>
+		<div style="width:200px; height:200px" class="web-thumb">
+			<center><h4>Student Portal</h4></center>
+			<a href="http://<%= request.host_with_port %>/home" class="thumbnail">
+		      <%= image_tag("root/projects/scbt.jpg") %>
+		    </a>
+		</div>
+	</td>
+
+	<td>
+		<div style="width:200px; height:200px" class="web-thumb">
+			<center><h4>Timeline Monitor</h4></center>
+			<a href="http://geralddzx.github.io/?tm" class="thumbnail">
+		      <%= image_tag("root/projects/monitor.jpg") %>
+		    </a>
+		</div>
+	</td>
+
+	<td>
+		<div style="width:200px; height:200px" class="web-thumb">
+			<center><h4>Space War</h4></center>
+			<a href="http://geralddzx.github.io/?sw" class="thumbnail">
+		      <%= image_tag("root/projects/space.jpg") %>
+		    </a>
+		</div>
+	</td>
+
+	<td>
+		<div style="width:200px; height:200px" class="web-thumb">
+			<center><h4>Carlisle Capital</h4></center>
+			<a href="http://www.carlislecapital.ca/" class="thumbnail">
+		      <%= image_tag("root/projects/carlisle.png") %>
+		    </a>
+		</div>
+	</td>
+</tr>
+</table>
