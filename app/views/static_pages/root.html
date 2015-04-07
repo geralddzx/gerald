@@ -1,14 +1,16 @@
-<div class="container-fluid">
-	<div class="row content-row">
-		<div class="col-xs-4">
-			<div style="width:300px; height:300px; padding:20px">
+<h1 id="profile">Profile</h1>
+<div class="row content-row">
+	<table>
+	<tr>
+		<td>
+			<div style="width:300px; height:300px;">
 			    <a href="#" class="thumbnail">
 			      <%= image_tag("photo.jpg") %>
 			    </a>
 			</div>
-		</div>
-	
-		<div class="col-xs-1">
+		</td>
+
+		<td>
 			<a href="http://ca.linkedin.com/pub/gerald-ding/73/3b/a70/en">
 				<%= image_tag("linkedin.gif", size: "50x50") %>
 			</a>
@@ -16,117 +18,87 @@
 			<a href="https://github.com/geralddzx">
 				<%= image_tag("github.png", size: "50x50") %>
 			</a>
-		</div>
 
-		<div class="col-xs-7">
-			<div id="projects-carousel" class="carousel slide" data-ride="carousel">
-				<!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#events-carousel" data-slide-to="0" class="active"></li>
-					<li data-target="#events-carousel" data-slide-to="1"></li>
-					<li data-target="#events-carousel" data-slide-to="2"></li>
-					<li data-target="#events-carousel" data-slide-to="3"></li>
-					<li data-target="#events-carousel" data-slide-to="4"></li>
-				</ol>
+			<a style="font-size:20px;vertical-align:middle" target="_blank" href="<%= asset_path('resume.pdf') %>">My Resume</a><br>
+			<div style="width:500px;">
+				Hello. My name is Gerald Ding. I specialize in building full stack web applications with Ruby on Rails. I am also proficient in building real time applications with Node.
+			</div> 
+		</td>
+	</tr>
+	</table>
+</div>
 
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<a href="http://scbt-student-space.herokuapp.com/">
-		      				<%= image_tag("projects/scbt.jpg") %>
-		    			</a>
-					</div>
 
-					<div class="item">
-						<a href="http://geralddzx.github.io/space%20wars/index.html?">
-		      				<%= image_tag("projects/space.jpg") %>
-						</a>
-					</div>
+<h1 id="projects">Projects</h1>
+<div class="row content-row">
+	<div class="col-xs-7">
+		<div id="projects-carousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#projects-carousel" data-slide-to="1"></li>
+				<li data-target="#projects-carousel" data-slide-to="2"></li>
+				<li data-target="#projects-carousel" data-slide-to="3"></li>
+				<li data-target="#projects-carousel" data-slide-to="4"></li>
+			</ol>
 
-					<div class="item">
-						<a href="http://geralddzx.github.io/timeline%20monitor/index.html">
-		      				<%= image_tag("projects/monitor.jpg") %>
-		    			</a>
-					</div>
-
-					<div class="item">
-						<a href="http://www.carlislecapital.ca/">
-		      				<%= image_tag("projects/carlisle.jpg") %>
-		    			</a>
-					</div>
-
-					<div class="item">
-						<a href="http://rnfc.herokuapp.com/">
-		      				<%= image_tag("projects/rnfc.jpg") %>
-		    			</a>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<a href="http://scbt-student-space.herokuapp.com/">
+	      				<%= image_tag("projects/scbt.jpg") %>
+	    			</a>
+	    			<div class="carousel-caption">
+						<h3>Stanford College Student Portal</h3>
 					</div>
 				</div>
 
-				<!-- Left and right controls -->
-				<a class="left carousel-control" data-target="#events-carousel" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<!-- <span class="sr-only">Previous</span> -->
-				</a>
-				<a class="right carousel-control" data-target="#events-carousel" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<!-- <span class="sr-only">Next</span> -->
-				</a>
+				<div class="item">
+					<a href="http://geralddzx.github.io/space%20wars/index.html?">
+	      				<%= image_tag("projects/space.jpg") %>
+					</a>
+					<div class="carousel-caption">
+						<h3>Space Wars</h3>
+					</div>
+				</div>
+
+				<div class="item">
+					<a href="http://geralddzx.github.io/timeline%20monitor/index.html">
+	      				<%= image_tag("projects/monitor.jpg") %>
+	    			</a>
+	    			<div class="carousel-caption">
+						<h3>Device Monitor</h3>
+					</div>
+				</div>
+
+				<div class="item">
+					<a href="http://www.carlislecapital.ca/">
+	      				<%= image_tag("projects/carlisle.png") %>
+	    			</a>
+	    			<div class="carousel-caption">
+						<h3>Carlisle Capital</h3>
+					</div>
+				</div>
+
+				<div class="item">
+					<a href="http://rnfc.herokuapp.com/">
+	      				<%= image_tag("projects/rnfc.jpg") %>
+	    			</a>
+	    			<div class="carousel-caption">
+						<h3>RN Financial Research Center</h3>
+					</div>
+				</div>
 			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" data-target="#projects-carousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<!-- <span class="sr-only">Previous</span> -->
+			</a>
+			<a class="right carousel-control" data-target="#projects-carousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<!-- <span class="sr-only">Next</span> -->
+			</a>
 		</div>
 	</div>
 </div>
-
-</table>
-
-<div style="padding:20px">
-	<a target="_blank" href="<%= asset_path('resume.pdf') %>">My Resume</a><br>
-</div> 
-
-<div style="width:750px; height:200px; padding:20px">
-	Hello. My name is Gerald Ding. I specialize in building full stack web applications with Ruby on Rails. I am also experienced in building real-time applications with node. I worked with SQL and Mongo databases.
-
-	I started programming when my friend told me about project Euler. After finishing the first 50 problems, I started learning ruby. After building my first app. I joined App Academy and learned good coding practices and pair programming. I built a full stack rails and backbone application for Stanford International College. After that, I worked part time for Sightline Innovations. I am finishing university this year and I am looking for full time junior developer positions.
-</div> 
-
-<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-
-<center><h2>Projects</h2></center>
-<table class="space-table">
-<tr>
-	<td>
-		<div style="width:200px; height:200px" class="web-thumb">
-			<center><h4>Student Portal</h4></center>
-			<a href="http://<%= request.host_with_port %>/home" class="thumbnail">
-		      <%= image_tag("scbt.jpg") %>
-		    </a>
-		</div>
-	</td>
-
-	<td>
-		<div style="width:200px; height:200px" class="web-thumb">
-			<center><h4>Timeline Monitor</h4></center>
-			<a href="http://geralddzx.github.io/?tm" class="thumbnail">
-		      <%= image_tag("monitor.jpg") %>
-		    </a>
-		</div>
-	</td>
-
-	<td>
-		<div style="width:200px; height:200px" class="web-thumb">
-			<center><h4>Space War</h4></center>
-			<a href="http://geralddzx.github.io/?sw" class="thumbnail">
-		      <%= image_tag("space.jpg") %>
-		    </a>
-		</div>
-	</td>
-
-	<td>
-		<div style="width:200px; height:200px" class="web-thumb">
-			<center><h4>Carlisle Capital</h4></center>
-			<a href="http://www.carlislecapital.ca/" class="thumbnail">
-		      <%= image_tag("carlisle.png") %>
-		    </a>
-		</div>
-	</td>
-</tr>
-</table>

@@ -18,6 +18,9 @@ gerald.run(["$rootScope", function ($rootScope) {
 	$rootScope.selectNav = function (){
 		$(".navbar-nav li").removeClass("selected")
 		$(event.currentTarget).addClass("selected")
+		var topPos = $($(event.currentTarget).find("a").attr("href")).offset().top
+		$('html, body').animate({scrollTop : topPos - $(".navbar-default").height() - 10}, 500);
+		event.preventDefault()
 	}
 
 	$(".navbar-nav li:first-child").addClass("selected")
@@ -30,6 +33,11 @@ gerald.run(["$rootScope", function ($rootScope) {
 	$("#gerald-title").hover(function() {
         $(this).css('cursor','pointer');
     });
+
+	$('.carousel').carousel({
+		interval: 5000
+	})
+
 }])
 
 // rnfc.run(["$rootScope", "$location", function($rootScope, $location) {

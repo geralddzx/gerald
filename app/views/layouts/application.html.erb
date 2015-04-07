@@ -9,8 +9,10 @@
   <%= render partial: "script" %>
 </head>
 
-<body style="padding-top:50px">
+<body>
 	<%= render partial: "layouts/header" %>
-	<%= yield %>
+	<div class="container-fluid">
+		<%= yield %>
+	</div>
 </body>
 </html>
