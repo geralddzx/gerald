@@ -4,14 +4,33 @@ var gerald = angular.module("gerald", [
 	"templates",
 ])
 
-gerald.config(["$routeProvider", 
-	function($routeProvider){
-		$routeProvider.
-			otherwise({
-				templateUrl: 'home.html'
-			})
+// gerald.config(["$routeProvider", 
+// 	function($routeProvider){
+// 		// $routeProvider.
+// 		// 	otherwise({
+// 		// 		templateUrl: 'home.html'
+// 		// 	})
+// 	}
+// ])
+
+
+gerald.run(["$rootScope", function ($rootScope) {
+	$rootScope.selectNav = function (){
+		$(".navbar-nav li").removeClass("selected")
+		$(event.currentTarget).addClass("selected")
 	}
-])
+
+	$(".navbar-nav li:first-child").addClass("selected")
+
+	// $scope.imageUrls = window.imageUrls
+	$("#gerald-title").click(function(){
+		window.location = "/"
+	})
+
+	$("#gerald-title").hover(function() {
+        $(this).css('cursor','pointer');
+    });
+}])
 
 // rnfc.run(["$rootScope", "$location", function($rootScope, $location) {
 // 	$rootScope.$on( "$routeChangeStart", function(event, next, current) {

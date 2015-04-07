@@ -1,9 +1,23 @@
-<nav id="nav-container" class="navbar navbar-default">
-    <div class="container-fluid">
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      	<ul class="nav navbar-nav">
-	        	<li class="tab"><a href="#">Profile</a></li>
-	      	</ul>
-	    </div>
-    </div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid" id="nav-container">
+		<div class="navbar-header navbar-left">
+			<button type="button" class="navbar-toggle collapsed fade-button" data-toggle="collapse" data-target="#gerald-nav">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<h4 id="gerald-title" class="gerald-text">Gerald Ding</h4>
+		</div>
+
+		<div class="collapse navbar-collapse navbar-right" id="gerald-nav">
+		  <ul class="nav navbar-nav">
+		  	<li ng-click="selectNav()"><a href="#">Home</a></li>
+		    <li ng-click="selectNav()"><a href="#">Profile</a></li>
+		    <li ng-click="selectNav()"><a href="#admission">Projects</a></li>
+		    <li ng-click="selectNav()"><a href="#events">Education</a></li>
+		    <li ng-click="selectNav()"><a href="#courses">Contact</a></li>
+		  </ul>
+		</div>
+	</div>
 </nav>
