@@ -47,8 +47,8 @@ group :development do
   gem 'newrelic_rpm'
 end
 
-  gem 'better_errors'
-  gem 'binding_of_caller'
+gem 'better_errors'
+gem 'binding_of_caller'
 
 gem 'email_validator'
 gem 'bootstrap-sass', '~> 3.2.0'
