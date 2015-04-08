@@ -3,6 +3,6 @@ class ContactMailer < ActionMailer::Base
   
   def email_gerald(message)
   	@message = message
-  	mail(to: message[:email], subject: message[:subject])
+  	mail(to: message[:email], subject: "Contact For gerald-ding.com")
   end
 end
