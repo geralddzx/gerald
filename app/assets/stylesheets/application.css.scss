@@ -236,3 +236,12 @@ body {
 		}
 	}
 }
+
+form {
+	* {
+		margin-bottom: 20px;
+	}
+	.message {
+		vertical-align: top;
+	}
+}

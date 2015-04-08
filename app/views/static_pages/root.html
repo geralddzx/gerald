@@ -102,3 +102,16 @@
 		</div>
 	</div>
 </div>
+
+<h1 id="contact">Contact</h1>
+<div class="row content-row">
+	<form accept-charset="UTF-8" action="/contact" method="post" style="width:300px;">
+	  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+	  <input class="form-control" placeholder="Name" name="contact[name]" type="text" />
+	  <input class="form-control" placeholder="Email" name="contact[email]" type="email" />
+	  <input class="form-control" placeholder="Subject" name="contact[subject]" type="text" />
+	  <textarea name="contact[content]" class="form-control" placeholder="Please submit a message" required style="height:200px;"></textarea>
+	  <input class="btn btn-default" type="submit" value="Submit" />
+	</form>
+</div>
+

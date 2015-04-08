@@ -9,4 +9,8 @@
 	imageUrls["projects/space"] = "<%= image_path('projects/space.jpg') %>"
 	imageUrls["projects/carlisle"] = "<%= image_path('projects/carlisle.jpg') %>"
 	imageUrls["projects/rnfc"] = "<%= image_path('projects/rnfc.jpg') %>"
+
+	<% if flash[:notice] %>
+		alert('<%= flash[:notice] %>')
+	<% end %>
 </script>
