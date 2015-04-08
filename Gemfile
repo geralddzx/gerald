@@ -39,14 +39,16 @@ gem 'thin'
 # gem 'debugger', group: [:development, :test]
 
 group :development do
-  gem 'better_errors'
-  gem 'binding_of_caller'
+
   gem 'pry-rails'
   gem 'quiet_assets'
   gem "letter_opener"
   gem 'annotate'
   gem 'newrelic_rpm'
 end
+
+  gem 'better_errors'
+  gem 'binding_of_caller'
 
 gem 'email_validator'
 gem 'bootstrap-sass', '~> 3.2.0'
