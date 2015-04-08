@@ -48,10 +48,6 @@ group :development do
   gem 'newrelic_rpm'
 end
 
-group :production do
-	gem 'sprockets-image_compressor'
-end
-
 gem 'email_validator'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
