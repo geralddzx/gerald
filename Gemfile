@@ -48,6 +48,7 @@ group :development do
   gem 'newrelic_rpm'
 end
 
+gem 'mailgun-ruby', '~>1.0.2'
 gem 'email_validator'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
